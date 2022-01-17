@@ -1,0 +1,624 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    font-family: 'Oswald', sans-serif;
+}
+#grid-container {
+    display: grid;
+    grid-template-rows: 30px 180px 150px 1450px 100px;
+    grid-template-areas:
+    "header"
+    "carrousel"
+    "horarios"
+    "contenido"
+    "footer";
+}
+header {
+    grid-area: header;
+}
+.lachoppera {
+    background-color: #dbca34;
+}
+.lachoppera .lacho {
+    color:black;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.lachoppera .nave .navegacion, .lachoppera .nave .solo{
+    font-size: 20px;
+    color:black;
+    text-align: right;
+}
+a:hover{
+    color: orangered;
+    text-decoration: overline;
+}
+.carousel {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    grid-area: carrousel;
+}
+body {
+    background-color: rgb(15, 14, 12);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #a8a8a8;
+  }
+#horarios .titulo{
+    padding: 3px;
+    text-align: center;
+    font-size: 27px;
+}
+#horarios .tabla{
+    margin: auto;
+    border: 1.5px solid #a8a8a8; 
+    letter-spacing: 0,5px;
+    margin-top: 1px;
+    margin-bottom: 20px;
+    border-collapse: none;
+}
+#horarios .titulos{
+    font-size: 11px;
+    padding: 4px;
+    text-align: center;
+}
+#horarios td{
+    font-size: 9px;
+    padding: 1px;
+    text-align: center;
+}
+.container-marketing {
+    grid-area: contenido;
+}
+.featurette-divider {
+    margin: 2rem 0;
+  }
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+.lugar img, .lugares img {
+    width: 300px;
+    height: auto;
+}
+footer {
+      text-align: center;
+      grid-area: footer;
+}
+footer img{
+    width: 60px;
+    height: auto;
+    padding-bottom: 20px;
+}
+/* pag-sucursales */
+#locales h2{
+    font-size: 27px;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 0px;
+}
+#locales p{
+text-align: center;
+font-size: 20px;
+padding: 15px;
+margin-bottom: 5px;
+}
+#locales div{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#locales img{
+    height: 150px;
+    width: 230px;
+    margin: 4px;
+}
+#ubicaciones div{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    background-image: linear-gradient(to left, #dbca34, rgb(15, 14, 12));/* lineal */
+}
+#ubicaciones iframe{
+    margin: 5px;
+    width: 132px;
+    height: 99px;
+    border: 2.5px dashed rgb(15, 14, 12);
+}
+/* pag- menu */
+.card {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.card-body {
+    background-color: rgb(15, 14, 12);
+}
+#fondomenu{
+    background-image: url(../img/hamburguesa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+#fondomenu div{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+#fondomenu img{
+    width: 265px;
+    height: 600px; 
+}
+.imagenesmenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imagenesmenu img{
+    width: 285px;
+    height: 141px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+/* pag-bebidas */
+#bebidas{
+    background-image: url(../img/bannerbis.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#bebidas h2{
+    font-size: 29px;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#bebidas div{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+#bebidas img{
+    height: 296px;
+    width: auto;
+    margin: 15px;
+    border: solid 2px #a8a8a8;
+    border-radius: 10px;
+}
+#botones {
+    display: flex;
+    justify-content: center;  
+}
+.colapse{
+    background-color: tomato;
+    color: black;
+    font-size: 27px;
+}
+.botonescuerpo {
+    color:#a8a8a8;
+    font-size: 25px;
+    width: 300px;
+}
+#imagenbebida div{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+#imagenbebida img{
+    height: 113px;
+    width: 182px;
+    margin: 7px;
+}
+/* pag contacto */
+#formulario .titulos {
+    text-align: center;
+    margin-top: 50px;
+}
+#formulario div h2{
+    font-size: 27px;
+    padding-bottom: 7px;
+}
+#formulario div h3{
+    font-size: 22px;
+    padding-bottom: 12px;
+    margin-top: 20px;
+}
+/* #contenidoformulario div{
+    display: flex;
+    justify-content: center;
+} */
+#contenidoformulario{
+    width: 283px; 
+    height: 854px;
+    margin: 33px auto;
+    border-radius: 30px; 
+    padding-top: 40px; 
+    padding-left: 44px; 
+    padding-right: 36px; 
+    background-image: url(../img/unnamed.jpg);
+    background-size: cover;
+    background-position: center;
+    color: black ;
+    text-shadow: black;
+    font-size: 23px;
+    text-align:left;
+    font-weight: bold;
+}
+#contenidoformulario input{ 
+    background-color: rgb(15, 14, 12); 
+    color:#a8a8a8;
+    width: 200px; 
+    height: 35px; 
+    border-radius: 10px;  
+    border-width: 1px;  
+    padding-left: 10px;
+    margin-bottom: 12px; 
+    display:block;
+    font-size: 20px;
+    text-align: center;
+}
+#contenidoformulario textarea{ 
+    background-color: rgb(15, 14, 12); 
+    color:#a8a8a8;
+    width:200px;
+    border-radius: 10px;  
+    margin-top: 10px;  
+    margin-bottom: 10px; 
+    padding-top: 26px; /* 20px */
+    font-size: 20px;
+    display: block;
+    text-align: center;
+} 
+#contenidoformulario label{
+    display: inline; 
+    text-align:left;
+    padding-right: 10px;
+}
+#contenidoformulario select{
+    background-color: rgb(15, 14, 12); 
+    color: #a8a8a8;
+    width: 200px; 
+    height: 35px; 
+    border-radius: 10px;   
+    margin-top: 17px;  
+    padding-left: 10px;
+    margin-bottom: 5px; /* antes 25px */
+    font-size: 17px; /* antes no tenia */
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+#contenidoformulario #checkbox{
+    width: 35px;
+    margin-left: 167px;
+    margin-top: -52px;
+}
+.botones button{
+    width: 90px;
+    height: 39px;
+    padding-left: 13px;
+    margin-bottom: 12px;
+    margin-left: 7px;
+    margin-top: 39px;
+}
+#contenidoformulario p {
+    margin-bottom: 0px;
+    margin-top: 36px;
+    font-weight: bold;
+}
+.contenidomodal {
+    background-color: rgb(214, 149, 28);
+}
+.contenidomodal .titulo{
+    font-size: 30px;
+    font-weight: bold;
+}
+.contenidomodal .cuerpo{
+    font-size: 25px;
+    text-align: center;
+}
+.final img {
+    width: 300px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 40px;
+}
+   /* RESPONSIVE CSS */
+  
+  @media (min-width: 728px) {
+    #grid-container {
+        grid-template-rows: 30px 430px 150px 1050px 90px;
+    }
+      /* index */
+      /* navegacion */
+    .lachoppera .lacho{
+        font-size: 45px;
+    }
+    .lachoppera .nave .navegacion, .lachoppera .nave .solo{
+        font-size: 27px;
+        margin-right: 0.7rem;
+        padding-right: 0px;
+    }
+    .navbar-light .navbar-nav .nav-link.active{
+        color:black;
+    }  
+    /* carrousel */
+    .carousel {
+        margin-top: 5rem;
+    }
+    /* horarios */
+    #horarios .titulo{
+        text-align: center;
+        font-size: 49px;
+        margin: 20px;
+    }
+    #horarios .titulos{
+        font-size: 23px;
+    }
+    #horarios td{
+        font-size: 20px;
+        padding: 1px 10px;
+        text-align: center;
+    }
+    .featurette-heading {
+        font-size: 50px;
+    }
+    .lugar img, .lugares img {
+        width: 290px;
+        height: 270px;
+        padding-right: 30px;
+      }
+      footer img{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 40px;
+    }
+    footer p{
+        margin-top: -60px;
+    }
+     /* sucursales- pag */
+     #locales h2{
+        font-size: 49px;
+        margin-bottom: 15px;
+    }
+    #locales p{
+        font-size: 35px;
+    }
+    #locales div{
+        flex-direction: row;
+        gap:61px;
+    }
+    #locales img{
+        height: 146px;
+        width: 279px;
+    }
+    #ubicaciones h2{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    #ubicaciones h4{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    #ubicaciones iframe{
+        margin: 10px;
+        width: 231px;
+        height: 131px;
+    }
+    /* menu-pag */
+    .card {
+        margin-top: 1px;
+        margin-bottom: 0px;
+    }
+    #fondomenu img{
+        width: 265px;
+        height: 600px; 
+    }
+    .imagenesmenu {
+        flex-direction: row;
+        justify-content: center;
+        gap: 35px;
+    }
+    .imagenesmenu img{
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+    #fondomenu img{
+        width: 500px;
+        height: 457px;
+    }
+    #fondomenu div{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+     /* bebidas-pag */
+     #bebidas{
+        background-position: left;
+    }
+    #bebidas h2{
+        font-size: 49px;
+        margin-top: 0px;
+    }
+    #bebidas div{
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 40px;
+    }
+    #bebidas img{
+        height: 401px;
+        width: 277px;
+        margin-top: 5px;
+    }
+    .colapse{
+        font-size: 27px;
+    }
+    .botonescuerpo {
+        color:#a8a8a8;
+        font-size: 35px;
+        width: auto;
+        margin-bottom: 0px;
+    }
+    #imagenbebida div{
+        flex-direction: row;
+        margin-top: 1px;
+    }
+    #imagenbebida img{
+        height: 113px;
+        width: 182px;
+        margin: 7px;
+    }
+    /* pag contacto */
+#formulario .titulos {
+    margin-top: -34px;
+}
+#formulario div h2{
+    font-size: 49px;
+    margin-bottom: 0px;
+}
+#formulario div h3{
+    font-size: 32px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+}
+#contenidoformulario{
+    width: 410px; 
+    height: 728px;
+    margin: 17px auto;
+    padding-top: 15px; 
+    font-size: 29px;
+}
+#contenidoformulario input{ 
+    width: 290px; 
+    height: 43px;   
+    padding-left: 3px;
+    margin-bottom: 5px; 
+}
+#contenidoformulario textarea{ 
+    width:290px;
+    font-size: 20px;
+} 
+#contenidoformulario label{
+    padding-right: 34px;
+}
+#contenidoformulario select{
+    width: 183px; 
+    height: 45px; 
+}
+#contenidoformulario p {
+    margin-bottom: -22px;
+}
+#contenidoformulario #checkbox{
+    margin-left: 286px;
+    margin-top: -42px;
+}
+.botones button{
+    width: 114px;
+    height: 40px;
+    padding-left: 14px;
+    margin-top: 17px;
+    margin-left: 25px;
+}
+#contenidoformulario .oracion {
+    margin-top: 0px;
+    display: inline-block;
+}
+.final img {
+    width: 217px;
+    margin-bottom: 21px;
+    margin-top: 0px;
+}
+  }
+  
+  @media (min-width: 1024px) {
+    #grid-container {
+        grid-template-rows: 30px 500px 250px 1150px 100px;
+    }
+        /* index */
+      /* navegacion */
+    .lachoppera .lacho{
+        font-size: 45px;
+    }
+    .nave{
+        padding-left: 33rem;
+    }
+    /* horarios */
+    #horarios .titulo{
+        font-size: 57px;
+        margin: 30px;
+    }
+    #horarios .titulos{
+        font-size: 33px;
+    }
+    #horarios td{
+        font-size: 25px;
+        padding: 10px 20px;
+        text-align: center;
+    }
+    .featurette-heading {
+        margin-top: 4.5rem;
+      }
+      .lugar img, .lugares img {
+        width: 491px;
+        height: 307px;
+      }
+      footer img{
+        width: 80px;
+    }
+    /* pag-sucursales */
+    #locales h2{
+        font-size: 57px;
+    }
+    #locales img{
+        height: 168px;
+        width: 375px;
+    }
+    #locales div{
+        justify-content: space-evenly;
+    }
+    #ubicaciones h3{
+        font-size: 25px;
+        margin-right: 30px;
+    }
+     /* pag-menu */
+     #fondomenu img{
+        width: 600px;
+        height: 564px;
+    }
+    /* pag-bebidas */
+    #bebidas{
+        background-position: top-left;
+    }
+    #bebidas img{
+        height: 446px;
+        width: 381px;
+    }
+    #imagenbebida img{
+        margin: 20px;
+        height: 136px;
+        width: 235px;
+    }
+    /* pag contactos */
+    .final img {
+        width: 251px;
+        margin-bottom: 21px;
+        margin-top: 0px;
+    }
+        }

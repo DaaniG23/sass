@@ -1,0 +1,272 @@
+@import 'vars';
+//pagina sucursales
+#grid-container {
+	display: grid;
+	grid-template-rows: 30px 180px 150px 1450px 100px;
+	grid-template-areas: "header" "carrousel" "horarios" "contenido" "footer";
+}
+header {
+	grid-area: header;
+}
+.lachoppera {
+	background-color: #dbca34;
+	.lacho {
+		color: black;
+		font-size: 30px;
+		font-weight: bold;
+		letter-spacing: 1px;
+	}
+	.nave {
+		.navegacion {
+			font-size: 20px;
+			color: $colorTexto;
+			text-align: right;
+		}
+		.solo {
+			font-size: 20px;
+			color: $colorTexto;
+			text-align: right;
+		}
+	}
+}
+a {
+	&:hover {
+		color: orangered;
+		text-decoration: overline;
+	}
+}
+.carousel {
+	margin-bottom: 1rem;
+	margin-top: 2rem;
+	grid-area: carrousel;
+}
+body {
+	background-color: $colorFondo;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	color: #a8a8a8;
+}
+#horarios {
+	grid-area: horarios;
+	.titulo {
+		padding: 3px;
+		text-align: center;
+		font-size: 27px;
+	}
+	.tabla {
+		margin: auto;
+		border: 1.5px solid #a8a8a8;
+		letter-spacing: 0,5px;
+		margin-top: 1px;
+		margin-bottom: 20px;
+		border-collapse: none;
+	}
+	.titulos {
+		font-size: 11px;
+		padding: 4px;
+		text-align: center;
+	}
+	td {
+		font-size: 9px;
+		padding: 1px;
+		text-align: center;
+	}
+}
+.featurette-divider {
+	margin: 2rem 0;
+}
+#locales {
+	grid-area:contenido;
+	h2 {
+		font-size: 27px;
+		text-align: center;
+		text-decoration: underline;
+		margin-top: 0px;
+	}
+	p {
+		text-align: center;
+		font-size: 20px;
+		padding: 15px;
+		margin-bottom: 5px;
+	}
+	div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	img {
+		height: 150px;
+		width: 230px;
+		margin: 4px;
+	}
+}
+#ubicaciones {
+	div {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-top: 20px;
+		background-image: linear-gradient(to left, #dbca34, rgb(15, 14, 12));
+	}
+	iframe {
+		margin: 5px;
+		width: 132px;
+		height: 99px;
+		border: 2.5px dashed rgb(15, 14, 12);
+	}
+}
+footer {
+	text-align: center;
+	grid-area: footer;
+	img {
+		width: 60px;
+		height: auto;
+		padding-bottom: 20px;
+	}
+}
+
+@media (min-width: 728px) {
+	#grid-container {
+		grid-template-rows: 30px 430px 150px 1050px 90px;
+	}
+	.lachoppera {
+		.lacho {
+			font-size: 45px;
+		}
+		.nave {
+			.navegacion {
+				font-size: 27px;
+				margin-right: 0.7rem;
+				padding-right: 0px;
+			}
+			.solo {
+				font-size: 27px;
+				margin-right: 0.7rem;
+				padding-right: 0px;
+			}
+		}
+	}
+	.navbar-light {
+		.navbar-nav {
+			.nav-link.active {
+				color: $colorTexto;
+			}
+		}
+	}
+	.carousel {
+		margin-top: 5rem;
+	}
+	#horarios {
+		.titulo {
+			text-align: center;
+			font-size: 49px;
+			margin: 20px;
+		}
+		.titulos {
+			font-size: 23px;
+		}
+		td {
+			font-size: 20px;
+			padding: 1px 10px;
+			text-align: center;
+		}
+	}
+	#locales {
+		h2 {
+			font-size: 49px;
+			margin-bottom: 15px;
+		}
+		p {
+			font-size: 35px;
+		}
+		div {
+			flex-direction: row;
+			gap: 61px;
+		}
+		img {
+			height: 146px;
+			width: 279px;
+		}
+	}
+	#ubicaciones {
+		h2 {
+			font-size: 30px;
+			margin-bottom: 10px;
+		}
+		h4 {
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+		iframe {
+			margin: 10px;
+			width: 231px;
+			height: 131px;
+		}
+	}
+	footer {
+		img {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			margin-left: 40px;
+		}
+		p {
+			margin-top: -60px;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	#grid-container {
+		grid-template-rows: 30px 500px 250px 1150px 100px;
+	}
+	.lachoppera {
+		.lacho {
+			font-size: 45px;
+		}
+	}
+	.nave {
+		padding-left: 33rem;
+	}
+	#horarios {
+		.titulo {
+			font-size: 57px;
+			margin: 30px;
+		}
+		.titulos {
+			font-size: 33px;
+		}
+		td {
+			font-size: 25px;
+			padding: 10px 20px;
+			text-align: center;
+		}
+	}
+	#locales {
+		h2 {
+			font-size: 57px;
+		}
+		img {
+			height: 168px;
+			width: 375px;
+		}
+		div {
+			justify-content: space-evenly;
+		}
+	}
+	#ubicaciones {
+		h3 {
+			font-size: 25px;
+			margin-right: 30px;
+		}
+	}
+	footer {
+		img {
+			width: 80px;
+		}
+	}
+}

@@ -1,0 +1,307 @@
+#grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 30px 180px 150px 1450px 100px;
+      grid-template-rows: 30px 180px 150px 1450px 100px;
+      grid-template-areas: "header" "carrousel" "horarios" "contenido" "footer";
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
+
+.lachoppera {
+  background-color: #dbca34;
+}
+
+.lachoppera .lacho {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.lachoppera .nave .navegacion {
+  font-size: 20px;
+  color: black;
+  text-align: right;
+}
+
+.lachoppera .nave .solo {
+  font-size: 20px;
+  color: black;
+  text-align: right;
+}
+
+a:hover {
+  color: orangered;
+  text-decoration: overline;
+}
+
+.carousel {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: carrousel;
+}
+
+body {
+  background-color: #0f0e0c;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #a8a8a8;
+}
+
+#horarios {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: horarios;
+}
+
+#horarios .titulo {
+  padding: 3px;
+  text-align: center;
+  font-size: 27px;
+}
+
+#horarios .tabla {
+  margin: auto;
+  border: 1.5px solid #a8a8a8;
+  letter-spacing: 0,5px;
+  margin-top: 1px;
+  margin-bottom: 20px;
+  border-collapse: none;
+}
+
+#horarios .titulos {
+  font-size: 11px;
+  padding: 4px;
+  text-align: center;
+}
+
+#horarios td {
+  font-size: 9px;
+  padding: 1px;
+  text-align: center;
+}
+
+.featurette-divider {
+  margin: 2rem 0;
+}
+
+#locales {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: contenido;
+}
+
+#locales h2 {
+  font-size: 27px;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 0px;
+}
+
+#locales p {
+  text-align: center;
+  font-size: 20px;
+  padding: 15px;
+  margin-bottom: 5px;
+}
+
+#locales div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#locales img {
+  height: 150px;
+  width: 230px;
+  margin: 4px;
+}
+
+#ubicaciones div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 20px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#dbca34), to(#0f0e0c));
+  background-image: linear-gradient(to left, #dbca34, #0f0e0c);
+}
+
+#ubicaciones iframe {
+  margin: 5px;
+  width: 132px;
+  height: 99px;
+  border: 2.5px dashed #0f0e0c;
+}
+
+footer {
+  text-align: center;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
+
+footer img {
+  width: 60px;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 728px) {
+  #grid-container {
+    -ms-grid-rows: 30px 430px 150px 1050px 90px;
+        grid-template-rows: 30px 430px 150px 1050px 90px;
+  }
+  .lachoppera .lacho {
+    font-size: 45px;
+  }
+  .lachoppera .nave .navegacion {
+    font-size: 27px;
+    margin-right: 0.7rem;
+    padding-right: 0px;
+  }
+  .lachoppera .nave .solo {
+    font-size: 27px;
+    margin-right: 0.7rem;
+    padding-right: 0px;
+  }
+  .navbar-light .navbar-nav .nav-link.active {
+    color: black;
+  }
+  .carousel {
+    margin-top: 5rem;
+  }
+  #horarios .titulo {
+    text-align: center;
+    font-size: 49px;
+    margin: 20px;
+  }
+  #horarios .titulos {
+    font-size: 23px;
+  }
+  #horarios td {
+    font-size: 20px;
+    padding: 1px 10px;
+    text-align: center;
+  }
+  #locales h2 {
+    font-size: 49px;
+    margin-bottom: 15px;
+  }
+  #locales p {
+    font-size: 35px;
+  }
+  #locales div {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 61px;
+  }
+  #locales img {
+    height: 146px;
+    width: 279px;
+  }
+  #ubicaciones h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  #ubicaciones h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  #ubicaciones iframe {
+    margin: 10px;
+    width: 231px;
+    height: 131px;
+  }
+  footer img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 40px;
+  }
+  footer p {
+    margin-top: -60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #grid-container {
+    -ms-grid-rows: 30px 500px 250px 1150px 100px;
+        grid-template-rows: 30px 500px 250px 1150px 100px;
+  }
+  .lachoppera .lacho {
+    font-size: 45px;
+  }
+  .nave {
+    padding-left: 33rem;
+  }
+  #horarios .titulo {
+    font-size: 57px;
+    margin: 30px;
+  }
+  #horarios .titulos {
+    font-size: 33px;
+  }
+  #horarios td {
+    font-size: 25px;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  #locales h2 {
+    font-size: 57px;
+  }
+  #locales img {
+    height: 168px;
+    width: 375px;
+  }
+  #locales div {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #ubicaciones h3 {
+    font-size: 25px;
+    margin-right: 30px;
+  }
+  footer img {
+    width: 80px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

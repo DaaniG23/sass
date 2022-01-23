@@ -1,3 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  font-family: 'Oswald', sans-serif;
+}
 #grid-container {
   display: -ms-grid;
   display: grid;
@@ -13,7 +22,7 @@ header {
 }
 
 .lachoppera {
-  background-color: #dbca34;
+  background: #dbca34;
 }
 
 .lachoppera .lacho {
@@ -98,7 +107,7 @@ body {
   grid-area: contenido;
 }
 
-#locales h2 {
+#locales h1 {
   font-size: 27px;
   text-align: center;
   text-decoration: underline;
@@ -214,7 +223,7 @@ footer img {
     padding: 1px 10px;
     text-align: center;
   }
-  #locales h2 {
+  #locales h1 {
     font-size: 49px;
     margin-bottom: 15px;
   }
@@ -284,7 +293,7 @@ footer img {
     padding: 10px 20px;
     text-align: center;
   }
-  #locales h2 {
+  #locales h1 {
     font-size: 57px;
   }
   #locales img {

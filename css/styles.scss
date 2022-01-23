@@ -8,14 +8,21 @@
 header {
 	grid-area: header;
 }
+/* maps */
+$colores: (
+fondo: #dbca34,
+letras: black,
+);
+/* agrego map-get */
 .lachoppera {
-	background-color: #dbca34;
+	background: map-get($colores, fondo);
 	.lacho {
-		color: black;
+		color: map-get($colores, letras);
 		font-size: 30px;
 		font-weight: bold;
 		letter-spacing: 1px;
 	}
+	/* extend */
 	.nave {
 		.navegacion {
 			font-size: 20px;
@@ -23,9 +30,7 @@ header {
 			text-align: right;
 		}
 		.solo {
-			font-size: 20px;
-			color: $colorTexto;
-			text-align: right;
+			@extend .navegacion;
 		}
 	}
 }
@@ -102,13 +107,16 @@ body {
 		margin: 4px;
 	}
 }
+/* agrego mixin */
+@mixin imagn {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+}
 #ubicaciones {
 	div {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-		flex-wrap: wrap;
+		@include imagn;
 		margin-top: 20px;
 		background-image: linear-gradient(to left, #dbca34, rgb(15, 14, 12));
 	}
@@ -137,6 +145,7 @@ footer {
 		.lacho {
 			font-size: 45px;
 		}
+		/* extend */
 		.nave {
 			.navegacion {
 				font-size: 27px;
@@ -144,9 +153,7 @@ footer {
 				padding-right: 0px;
 			}
 			.solo {
-				font-size: 27px;
-				margin-right: 0.7rem;
-				padding-right: 0px;
+				@extend .navegacion;
 			}
 		}
 	}

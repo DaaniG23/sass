@@ -97,7 +97,7 @@ footer img{
     padding-bottom: 20px;
 }
 /* pag-sucursales */
-#locales h2{
+#locales h1{
     font-size: 27px;
     text-align: center;
     text-decoration: underline;
@@ -395,7 +395,7 @@ margin-bottom: 5px;
         margin-top: -60px;
     }
      /* sucursales- pag */
-     #locales h2{
+    #locales h1{
         font-size: 49px;
         margin-bottom: 15px;
     }
@@ -583,7 +583,7 @@ margin-bottom: 5px;
         width: 80px;
     }
     /* pag-sucursales */
-    #locales h2{
+    #locales h1{
         font-size: 57px;
     }
     #locales img{
